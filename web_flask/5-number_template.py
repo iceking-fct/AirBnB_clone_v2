@@ -41,7 +41,7 @@ def int_route(n):
 @app.route("/number_template/<int:n>", strict_slashes=False)
 def number_n(n):
     """renders template if n is of type int"""
-   return render_template("5-number.html", num=n)
+   return render_template("5-number.html", n=n)
 
 
 if __name__ == "__main__":
