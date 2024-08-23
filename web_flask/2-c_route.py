@@ -21,7 +21,7 @@ def hbnb_route():
 
 @app.route("/c/<text>", strict_slashes=False)
 def text_route(text):
-    """defines a route handling text variable """
+    """defines a route handling text variable, and display "C " followed by the value of the text variable """
     return ("C " + text.replace("_", " "))
 
 
